@@ -33,6 +33,7 @@ header #searchbar{
     grid-column: 7/8;
     grid-row: 2/3;
     line-height: 10px;
+  
     
 }
 header #search{
@@ -51,7 +52,7 @@ header #knap{
 
 .logo{
     grid-column: 1/2;
-    grid-row: 1/-1  ;
+    grid-row: 1/-1;
 
     width:100%;
     height: 100%;
@@ -64,6 +65,8 @@ object-fit: cover;
     font-family: 'Raleway', sans-serif;
     font-weight: 2px;    
     font-size: 4em;
+    animation: wobble-hor-bottom 20s;
+    
    
 
 }
@@ -77,6 +80,7 @@ object-fit: cover;
 .logo img{
     width: 35%;
     height: 100%;
+    
 }
 
 
@@ -108,6 +112,7 @@ font-size: 1em;
 nav ul li a:hover{
 border-bottom: 2px solid black;
 color:rgb(0, 255, 255);
+
 }
 
 
@@ -129,7 +134,7 @@ main section{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 #home img{
-
+    
 grid-column:1/5;
 grid-row:3/6;
 width: 100%;
@@ -188,7 +193,7 @@ object-position: top;
 }
 .infohotel1 {
     grid-column: 1/2;
-    grid-row: 2/4;
+    grid-row: 2/3;
    padding: 10px;
    text-align: left;
 }
@@ -203,7 +208,7 @@ object-position: top;
 }
 .infohotel2 {
     grid-column: 2/3;
-    grid-row: 2/4;
+    grid-row: 2/3;
    padding: 10px;
 }
 .infohotel2 h2{
@@ -217,7 +222,7 @@ object-position: top;
 }
 .infohotel3 {
     grid-column: 3/4;
-    grid-row: 2/4;
+    grid-row: 2/3;
    padding: 10px;
 }
 .infohotel3 h2{
@@ -308,11 +313,13 @@ object-position: top;
 
 #event{
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
 }
 #event img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
     
 }
 .eventimg1{
@@ -322,10 +329,10 @@ object-position: top;
     
 }
 .eventimg2{
-    height: 50%;
-    width: 100%;
+    
+    
     grid-column: 1/2;
-    grid-row: 3/-1;
+    grid-row: 3/4;
     background-color: #45a098;
 }
 .eventimg3{
@@ -351,12 +358,10 @@ object-position: top;
     background-color: #454ea0;
 }
 .eventimg6{
-   width: 100%;
-   height: 50%;
    
    object-fit: cover;
     grid-column: 2/3;
-    grid-row: 3/-1;
+    grid-row: 3/4;
     background-color: #45a063;
 }
 .eventimg7{
@@ -365,6 +370,7 @@ object-position: top;
     background-color: #070505;
 }
 .eventimg7 p{
+    margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
     color: #f2f2f2;
@@ -380,7 +386,7 @@ object-position: top;
 .eventimg10{
     
     grid-column: 1/-1;
-    grid-row: 4/-1;
+    grid-row: 4/5;
     background-color: #000000;
 }
 .eventimg10 p{
@@ -419,75 +425,133 @@ p.fontcolor6{
    
 }
 .fontcolor6 a{
-
     color: #ffffff;
+ }
+ p.fontcolor7{
+    margin-top: 60px;
+    text-align: center;
+    color: #eeff00;
+    
+    font-size: 4em;
     
  }
 
-
-
-#deals{
-    grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
- 
-background-color: rgb(117, 117, 19);
-}
-
-.deal1{
-    background-color: rgb(160, 121, 121);
-    grid-column: 2/3;
-    grid-row: 2/3;
+#eventsec2{
+    background-color: #00d9ff;
 }
 
 
-
-
-
-#contact{
+#eventsec3{
+    
     background-color: #a02e2e;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+ 
 }
-
-* {box-sizing: border-box;}
-            
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+#deal{
+    background-image: url(/img/par_eiffel_1400x650.jpg);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    background-color: rgb(129, 206, 29);
 }
-
-input[type=submit] {
-  background-color: rgb(27, 14, 209);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+#deal img{
+    width: 65%;
+    height: 100%;
+    object-fit: contain;
 }
-
-input[type=submit]:hover {
-  background-color: #18c020;
+.deal1left p{
+    color: #ffffff;
+    font-size: 2em;
 }
-
-.container {
-    grid-column: 1/3;
+.deal1left{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+    background-color:black;
+    
+}
+.deal1right{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    
+    
+}
+.deal1mid{
+    object-fit: cover;
+   
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.deal2left p{
+    color: #ffffff;
+    font-size: 2em;
+}
+.deal2left{
+    grid-column: 1/2;
     grid-row: 3/4;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  height: 10px;
+    
+    background-color: black;
+}
+.deal2right{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    
+   
+}
+.deal2mid{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    
+}
+.deal3left p{
+    color: #ffffff;
+    font-size: 1.7em;
+}
+.deal3left{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    
+    background-color: black;
+}
+.deal3right{
+    grid-column: 3/4;
+    grid-row: 5/6;
+   
+}
+.deal3mid{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    
+}
+.zoom {
+    padding: 2px;
+    
+    transition: transform .2s;
   
-}          
-           
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+
+    transform: scale(2.5); 
+  }
+
+         
+
+  
+footer{
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+}
 
 
+    /* #form_container{
+        text-align: center;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    background-image: url(/img/par_eiffel_1400x650.jpg);
+    height: 50vh;
+    width: 100%;
+    
+    } */
 
 
-
-
+ 
