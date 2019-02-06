@@ -15,4 +15,6 @@ Internet Explore is not supported.
 
 Onepage was made at: https://moqups.com/
 
+Github repo:
+https://github.com/Hestur/gotoparis
 
