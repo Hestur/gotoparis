@@ -17,21 +17,21 @@ header{
     background-color:purple;
     opacity: 0.8;
     width: 100%;
-    height:75px;
-    grid-column: 1 / -1;
+    height:70px;
+    grid-column: 1 /-1;
     grid-row: 1/2;
     position:sticky;
     top:0;
 
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 
 
 }
 header #searchbar{
     margin: 10px;
     grid-column: 7/8;
-    grid-row: 2/3;
+    grid-row: 1/2   ;
     line-height: 10px;
   
     
@@ -50,31 +50,17 @@ header #knap{
     height: 29px;
 }
 
-.logo{
-    grid-column: 1/2;
-    grid-row: 1/-1;
-
+.skylineimg{
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    margin-top: 40px;
     width:100%;
     height: 100%;
-object-fit: cover;
+object-fit: contain;
 }
 
-#logotext h1{
-    text-align: center;
-    color: blue; 
-    font-family: 'Raleway', sans-serif;
-    font-weight: 2px;    
-    font-size: 4em;
-    animation: wobble-hor-bottom 20s;
+
     
-   
-
-}
-#logotext{
-    grid-column: 3/5;
-    grid-row: 2/3;
-    object-position: center;
-}
 
 
 .logo img{
@@ -87,8 +73,9 @@ object-fit: cover;
 nav{
     margin: 10px;
     grid-column: 3/6;
-    grid-row: 2/3;
+    grid-row: 1/2;
     line-height: 25px;
+    
   
 
 }
@@ -133,7 +120,7 @@ main section{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
-#home img{
+.homeimg{
     
 grid-column:1/5;
 grid-row:3/6;
@@ -529,7 +516,7 @@ p.fontcolor6{
     margin: 0 auto;
   }
   
-  .zoom:hover {
+.zoom:hover {
 
     transform: scale(2.5); 
   }
@@ -537,21 +524,50 @@ p.fontcolor6{
          
 
   
-footer{
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr;
-}
 
 
-    /* #form_container{
-        text-align: center;
+#form_container{
+    text-align: center;
     grid-column: 1/-1;
     grid-row: 1/-1;
-    background-image: url(/img/par_eiffel_1400x650.jpg);
-    height: 50vh;
-    width: 100%;
+    background-image: url(/img/Paris_-_France26__April_2014-06-36-49_jpg_2048x.jpg);
+    height: 100%;
+    width: 1519px;
     
-    } */
+    }
+.form_description{
+color: white; 
+font-family: 'Raleway', sans-serif;
+}  
+#li_1 .description{
+    
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif; 
+} 
+#li_3 .description{
+    color:#ffffff; 
+    font-family: 'Raleway', sans-serif;
+}
+#li_4    .description{
+    color:#ffffff; 
+    font-family: 'Raleway', sans-serif;
+}
+#li_5 .description{
+    color:#ffffff; 
+    font-family: 'Raleway', sans-serif;
+}
+#li_6 .description{
+    color:#ffffff;
+    font-family: 'Raleway', sans-serif; 
+}     
+ 
+
+.infofoot{
+    font-size: 2em;
+    color: #ffffff;
+    
+}
+
 
 
  
